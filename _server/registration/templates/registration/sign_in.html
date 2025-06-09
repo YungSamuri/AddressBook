@@ -3,6 +3,7 @@
 {% block content %}
 <form action="/registration/sign_in/" method="post">
   {% csrf_token %}
+  <h1>Sign In</h1>
   <div>
     <label>
       Email
@@ -17,6 +18,6 @@
   </div>
   <button>Sign In</button>
 
+  <a href="/registration/sign_up/">Create New Account</a>
 </form>
-<a href="/registration/sign_up/">Create New Account</a>
 {% endblock %}
